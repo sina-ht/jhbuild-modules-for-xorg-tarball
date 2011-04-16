@@ -1,15 +1,17 @@
 jhbuild xorg.modules file for X.org tar-ball build.
-Copyright(C) 2010 by Hiroshi Takekawa
+Copyright(C) 2010-2011 by Hiroshi Takekawa
 
 Provides the perl script which reads the current xorg.modules and creates
 xorg.modules for a tar-ball release.
 
-  Perl script: create-xorg-modueleset.pl
-  Using perl modules: LWP::UserAgent, XML::Simple Digest
-  Created modules file for X11R7.6-RC1: X11R7.6-RC1.xorg.modules
+Contents:
+  Perl script: create-xorg-moduleset.pl
+    Using perl modules: LWP::UserAgent, XML::Simple Digest
+  Created modules file for X11 releases.
 
-Modify the file 'xorg.jhbuildrc' below and then run jhbuild to fetch and
-build X11R7.6-RC1 tar-ball release.
+Build X11:
+  Modify the file 'xorg.jhbuildrc' below and then run jhbuild to fetch and
+  build X11 tar-ball release.
 
 # xorg.jhbuildrc sample
 # $ jhbuild -f xorg.jhbuildrc
@@ -21,3 +23,11 @@ prefix = '/usr/X11R7.6-RC1'
 os.environ['ACLOCAL'] = 'aclocal -I ' + os.path.join(prefix, 'share', 'aclocal')
 os.environ['PKG_CONFIG_PATH'] = os.path.join(prefix, 'lib', 'pkgconfig') \
                         + ':' + os.path.join(prefix, 'share', 'pkgconfig')
+
+Create xorg.modules:
+  Make sure to remove .src.everything to clear the cache.
+  Modify the configuration of the script.
+    Especially the $XorgRelease variable.
+    my $XorgRelease = 'X11R7.6';
+  Run the script.
+    $ ./create-xorg-modueleset.pl  > X11R7.6.xorg.modules
