@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# Copyright(C) 2010 by Hiroshi Takekawa
+# Copyright(C) 2010-2011 by Hiroshi Takekawa
 #
 # Read the current xorg.modules and create xorg.modules for a tar-ball release.
 
@@ -9,7 +9,7 @@
 # modules = [ 'xorg' ]
 # checkoutroot = '/tank/src/Xorg/X11R7.6-RC1'
 # tarballdir = os.path.join(checkoutroot, 'pkgs')
-# prefix = '/usr/X11R7.66-RC1'
+# prefix = '/usr/X11R7.6-RC1'
 # os.environ['ACLOCAL'] = 'aclocal -I ' + os.path.join(prefix, 'share', 'aclocal')
 # os.environ['PKG_CONFIG_PATH'] = os.path.join(prefix, 'lib', 'pkgconfig') \
 #                         + ':' + os.path.join(prefix, 'share', 'pkgconfig')
@@ -20,11 +20,13 @@ use Digest;
 #use Data::Dumper;
 
 ### Configuration
-my $XorgTargetURL = 'http://www.x.org/releases/X11R7.6-RC1/src/everything/';
+my $XorgRelease = 'X11R7.6';
+my $XorgTargetURL = "http://www.x.org/releases/${XorgRelease}/src/everything/";
 my $XorgTargetCache = '.src.everything';
-my $XorgTargetCacheDir = 'X11R7.6-RC1';
 my $XorgBaseURL = 'http://cgit.freedesktop.org/xorg/util/modular/plain/xorg.modules';
 my $XorgBaseCache = '.xorg.modules.cache';
+my $XorgTargetCacheDir = $XorgRelease;
+
 # source to target conversion
 # SYSTEM means that we use the system-installed module.
 my $XorgModules = {
@@ -82,7 +84,7 @@ sub use_cache_or_retrieve {
 	my $res = $ua->request($req);
 
 	if (!$res->is_success) {
-	    die $res->status_line, "\n";
+	    die "$url -> $cache: ", $res->status_line, "\n";
 	}
 	$content = $res->content;
 	open FILE, ">$cache";
