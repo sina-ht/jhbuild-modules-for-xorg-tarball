@@ -1,0 +1,1625 @@
+<?xml version="1.0" standalone="no"?> <!--*- mode: nxml -*-->
+<!DOCTYPE moduleset SYSTEM "moduleset.dtd">
+<?xml-stylesheet type="text/xsl" href="moduleset.xsl"?>
+<!-- fontconfig is a system module, skip. -->
+<!-- libxkbui is specified as 'SKIP', skip. -->
+<!-- libdrm is a system module, skip. -->
+<!-- libGL is a system module, skip. -->
+<!-- pixman is a system module, skip. -->
+<!-- xcb-util is specified as 'SKIP', skip. -->
+<!-- rendercheck is specified as 'SKIP', skip. -->
+<!-- scripts is specified as 'SKIP', skip. -->
+<!-- twm is specified as 'SKIP', skip. -->
+<!-- xeyes is specified as 'SKIP', skip. -->
+<!-- xinit is specified as 'SKIP', skip. -->
+<!-- xlogo is specified as 'SKIP', skip. -->
+<!-- xf86-input-acecad is specified as 'SKIP', skip. -->
+<!-- xf86-input-aiptek is specified as 'SKIP', skip. -->
+<!-- xf86-video-chips is specified as 'SKIP', skip. -->
+<!-- xf86-video-nouveau is specified as 'SKIP', skip. -->
+<!-- xf86-video-rendition is specified as 'SKIP', skip. -->
+<!-- xf86-video-sisusb is specified as 'SKIP', skip. -->
+<!-- xf86-video-suncg14 is specified as 'SKIP', skip. -->
+<!-- xf86-video-suncg3 is specified as 'SKIP', skip. -->
+<!-- xf86-video-sunleo is specified as 'SKIP', skip. -->
+<!-- xf86-video-suntcx is specified as 'SKIP', skip. -->
+<!-- xf86-video-tseng is specified as 'SKIP', skip. -->
+<!-- xf86-video-xgi is specified as 'SKIP', skip. -->
+<!-- xf86-video-xgixp is specified as 'SKIP', skip. -->
+<moduleset>
+  <metamodule id="fontconfig" />
+  <metamodule id="libGL" />
+  <metamodule id="libdrm" />
+  <metamodule id="libxkbui" />
+  <metamodule id="pixman" />
+  <metamodule id="rendercheck" />
+  <metamodule id="scripts" />
+  <metamodule id="twm" />
+  <metamodule id="xcb-util" />
+  <metamodule id="xeyes" />
+  <metamodule id="xf86-input-acecad" />
+  <metamodule id="xf86-input-aiptek" />
+  <metamodule id="xf86-video-chips" />
+  <metamodule id="xf86-video-nouveau" />
+  <metamodule id="xf86-video-rendition" />
+  <metamodule id="xf86-video-sisusb" />
+  <metamodule id="xf86-video-suncg14" />
+  <metamodule id="xf86-video-suncg3" />
+  <metamodule id="xf86-video-sunleo" />
+  <metamodule id="xf86-video-suntcx" />
+  <metamodule id="xf86-video-tseng" />
+  <metamodule id="xf86-video-xgi" />
+  <metamodule id="xf86-video-xgixp" />
+  <metamodule id="xinit" />
+  <metamodule id="xlogo" />
+  <metamodule id="xorg">
+    <dependencies>
+      <dep package="xorg-protos" />
+      <dep package="xorg-libs" />
+      <dep package="xorg-apps" />
+      <dep package="xorg-fonts" />
+      <dep package="xorg-drivers" />
+      <dep package="xorg-docs" />
+      <dep package="xserver" />
+      <dep package="xkeyboard-config" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-apps">
+    <dependencies>
+      <dep package="iceauth" />
+      <dep package="luit" />
+      <dep package="rendercheck" />
+      <dep package="scripts" />
+      <dep package="sessreg" />
+      <dep package="setxkbmap" />
+      <dep package="smproxy" />
+      <dep package="twm" />
+      <dep package="x11perf" />
+      <dep package="xauth" />
+      <dep package="xbacklight" />
+      <dep package="xcmsdb" />
+      <dep package="xcursorgen" />
+      <dep package="xdpyinfo" />
+      <dep package="xdriinfo" />
+      <dep package="xev" />
+      <dep package="xeyes" />
+      <dep package="xgamma" />
+      <dep package="xhost" />
+      <dep package="xinit" />
+      <dep package="xinput" />
+      <dep package="xkbcomp" />
+      <dep package="xkbevd" />
+      <dep package="xkbutils" />
+      <dep package="xkill" />
+      <dep package="xlogo" />
+      <dep package="xlsatoms" />
+      <dep package="xlsclients" />
+      <dep package="xmodmap" />
+      <dep package="xpr" />
+      <dep package="xprop" />
+      <dep package="xrandr" />
+      <dep package="xrdb" />
+      <dep package="xrefresh" />
+      <dep package="xset" />
+      <dep package="xsetroot" />
+      <dep package="xvinfo" />
+      <dep package="xwd" />
+      <dep package="xwininfo" />
+      <dep package="xwud" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-drivers">
+    <dependencies>
+      <dep package="xf86-input-acecad" />
+      <dep package="xf86-input-aiptek" />
+      <dep package="xf86-input-evdev" />
+      <dep package="xf86-input-joystick" />
+      <dep package="xf86-input-keyboard" />
+      <dep package="xf86-input-mouse" />
+      <dep package="xf86-input-void" />
+      <dep package="xf86-video-ati" />
+      <dep package="xf86-video-chips" />
+      <dep package="xf86-video-cirrus" />
+      <dep package="xf86-video-dummy" />
+      <dep package="xf86-video-fbdev" />
+      <dep package="xf86-video-geode" />
+      <dep package="xf86-video-glint" />
+      <dep package="xf86-video-i128" />
+      <dep package="xf86-video-intel" />
+      <dep package="xf86-video-mach64" />
+      <dep package="xf86-video-mga" />
+      <dep package="xf86-video-neomagic" />
+      <dep package="xf86-video-nouveau" />
+      <dep package="xf86-video-nv" />
+      <dep package="xf86-video-openchrome" />
+      <dep package="xf86-video-r128" />
+      <dep package="xf86-video-rendition" />
+      <dep package="xf86-video-savage" />
+      <dep package="xf86-video-sis" />
+      <dep package="xf86-video-sisusb" />
+      <dep package="xf86-video-suncg14" />
+      <dep package="xf86-video-suncg3" />
+      <dep package="xf86-video-suncg6" />
+      <dep package="xf86-video-sunffb" />
+      <dep package="xf86-video-sunleo" />
+      <dep package="xf86-video-suntcx" />
+      <dep package="xf86-video-tdfx" />
+      <dep package="xf86-video-tga" />
+      <dep package="xf86-video-trident" />
+      <dep package="xf86-video-tseng" />
+      <dep package="xf86-video-vesa" />
+      <dep package="xf86-video-vmware" />
+      <dep package="xf86-video-voodoo" />
+      <dep package="xf86-video-xgi" />
+      <dep package="xf86-video-xgixp" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-fonts">
+    <dependencies>
+      <dep package="font-util" />
+      <dep package="encodings" />
+      <dep package="font-adobe-100dpi" />
+      <dep package="font-adobe-75dpi" />
+      <dep package="font-adobe-utopia-100dpi" />
+      <dep package="font-adobe-utopia-75dpi" />
+      <dep package="font-adobe-utopia-type1" />
+      <dep package="font-bitstream-100dpi" />
+      <dep package="font-bitstream-75dpi" />
+      <dep package="font-bitstream-type1" />
+      <dep package="font-cursor-misc" />
+      <dep package="font-misc-misc" />
+      <dep package="font-alias" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-libs">
+    <dependencies>
+      <dep package="libFS" />
+      <dep package="libICE" />
+      <dep package="libSM" />
+      <dep package="libX11" />
+      <dep package="libXScrnSaver" />
+      <dep package="libXau" />
+      <dep package="libXaw" />
+      <dep package="libXcomposite" />
+      <dep package="libXcursor" />
+      <dep package="libXdamage" />
+      <dep package="libXdmcp" />
+      <dep package="libXext" />
+      <dep package="libXfixes" />
+      <dep package="libXfont" />
+      <dep package="libXft" />
+      <dep package="libXi" />
+      <dep package="libXinerama" />
+      <dep package="libXmu" />
+      <dep package="libXpm" />
+      <dep package="libXrandr" />
+      <dep package="libXrender" />
+      <dep package="libXRes" />
+      <dep package="libXt" />
+      <dep package="libXtst" />
+      <dep package="libXv" />
+      <dep package="libXvMC" />
+      <dep package="libXxf86dga" />
+      <dep package="libXxf86vm" />
+      <dep package="libdmx" />
+      <dep package="libfontenc" />
+      <dep package="libxkbfile" />
+      <dep package="libxkbui" />
+      <dep package="libxtrans" />
+      <dep package="libdrm" />
+      <dep package="libGL" />
+      <dep package="pixman" />
+      <dep package="libpciaccess" />
+      <dep package="libxcb" />
+      <dep package="xcb-util" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-protos">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="bigreqsproto" />
+      <dep package="compositeproto" />
+      <dep package="damageproto" />
+      <dep package="dmxproto" />
+      <dep package="fixesproto" />
+      <dep package="fontsproto" />
+      <dep package="glproto" />
+      <dep package="inputproto" />
+      <dep package="kbproto" />
+      <dep package="xineramaproto" />
+      <dep package="randrproto" />
+      <dep package="recordproto" />
+      <dep package="renderproto" />
+      <dep package="resourceproto" />
+      <dep package="scrnsaverproto" />
+      <dep package="videoproto" />
+      <dep package="xcmiscproto" />
+      <dep package="xextproto" />
+      <dep package="xf86bigfontproto" />
+      <dep package="xf86dgaproto" />
+      <dep package="xf86driproto" />
+      <dep package="xf86vidmodeproto" />
+      <dep package="x11proto" />
+      <dep package="dri2proto" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-sun-drivers">
+    <dependencies>
+      <dep package="xf86-video-suncg14" />
+      <dep package="xf86-video-suncg3" />
+      <dep package="xf86-video-suncg6" />
+      <dep package="xf86-video-sunffb" />
+      <dep package="xf86-video-sunleo" />
+      <dep package="xf86-video-suntcx" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-unmaintained-broken-drivers">
+    <dependencies>
+      <dep package="xf86-video-wsfb" />
+    </dependencies>
+  </metamodule>
+  <metamodule id="xorg-x86-drivers">
+    <dependencies>
+      <dep package="xf86-input-vmmouse" />
+    </dependencies>
+  </metamodule>
+  <repository default="yes" href="git://anongit.freedesktop.org/git/" name="git.freedesktop.org" type="git" />
+  <repository href="http://svn.openchrome.org/" name="svn.openchrome.org" type="svn" />
+  <tarball id="applewmproto">
+    <branch checkoutdir="xorg/proto/applewmproto" module="xorg/proto/applewmproto" />
+  </tarball>
+  <tarball id="bdftopcf" branch="">
+    <dependencies>
+      <dep package="libXfont" />
+    </dependencies>
+    <source hash="sha256:9c90b408b2fe079495697bfc8fb13da940b2b70f4907213bf5dcc9e3024a1d0a" href="http://www.x.org/releases/X11R7.7/src/everything/bdftopcf-1.0.3.tar.bz2" md5sum="4a7a4a848c43c42f7d499b60666434a4" size="104929" />
+  </tarball>
+  <tarball id="bigreqsproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:462116ab44e41d8121bfde947321950370b285a5316612b8fce8334d50751b1e" href="http://www.x.org/releases/X11R7.7/src/everything/bigreqsproto-1.1.2.tar.bz2" md5sum="1a05fb01fa1d5198894c931cf925c025" size="113218" />
+  </tarball>
+  <tarball id="bitmaps" branch="">
+    <dependencies>
+      <dep package="macros" />
+    </dependencies>
+    <source hash="sha256:3671b034356bbc4d32d052808cf646c940ec8b2d1913adac51b1453e41aa1e9d" href="http://www.x.org/releases/X11R7.7/src/everything/xbitmaps-1.1.1.tar.bz2" md5sum="7444bbbd999b53bec6a60608a5301f4c" size="113346" />
+  </tarball>
+  <tarball id="compositeproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:049359f0be0b2b984a8149c966dd04e8c58e6eade2a4a309cf1126635ccd0cfc" href="http://www.x.org/releases/X11R7.7/src/everything/compositeproto-0.4.2.tar.bz2" md5sum="98482f65ba1e74a08bf5b056a4031ef0" size="101208" />
+  </tarball>
+  <tarball id="cursors">
+    <branch checkoutdir="xorg/data/cursors" module="xorg/data/cursors" />
+    <dependencies>
+      <dep package="xcursorgen" />
+    </dependencies>
+  </tarball>
+  <tarball id="damageproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:5c7c112e9b9ea8a9d5b019e5f17d481ae20f766cb7a4648360e7c1b46fc9fc5b" href="http://www.x.org/releases/X11R7.7/src/everything/damageproto-1.2.1.tar.bz2" md5sum="998e5904764b82642cc63d97b4ba9e95" size="98392" />
+  </tarball>
+  <tarball id="dmxproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:e72051e6a3e06b236d19eed56368117b745ca1e1a27bdc50fd51aa375bea6509" href="http://www.x.org/releases/X11R7.7/src/everything/dmxproto-2.3.1.tar.bz2" md5sum="4ee175bbd44d05c34d43bb129be5098a" size="96467" />
+  </tarball>
+  <tarball id="dri2proto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:ad82c0b28c19fcd3f91ea1f93956cb666526b41b91f239773b5854b9b1a3b909" href="http://www.x.org/releases/X11R7.7/src/everything/dri2proto-2.6.tar.bz2" md5sum="2eb74959684f47c862081099059a11ab" size="102188" />
+  </tarball>
+  <tarball id="encodings" branch="">
+    <dependencies>
+      <dep package="mkfontscale" />
+    </dependencies>
+    <source hash="sha256:ced6312988a45d23812c2ac708b4595f63fd7a49c4dcd9f66bdcd50d1057d539" href="http://www.x.org/releases/X11R7.7/src/everything/encodings-1.0.4.tar.bz2" md5sum="0f2d6546d514c5cc4ecf78a60657a5c1" size="665087" />
+  </tarball>
+  <tarball id="fixesproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:ba2f3f31246bdd3f2a0acf8bd3b09ba99cab965c7fb2c2c92b7dc72870e424ce" href="http://www.x.org/releases/X11R7.7/src/everything/fixesproto-5.0.tar.bz2" md5sum="e7431ab84d37b2678af71e29355e101d" size="100886" />
+  </tarball>
+  <tarball id="font-adobe-100dpi" branch="">
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+      <dep package="font-util" />
+    </dependencies>
+    <source hash="sha256:b2c08433eab5cb202470aa9f779efefce8d9cab2534f34f3aa4a31d05671c054" href="http://www.x.org/releases/X11R7.7/src/everything/font-adobe-100dpi-1.0.3.tar.bz2" md5sum="1347c3031b74c9e91dc4dfa53b12f143" size="1113104" />
+  </tarball>
+  <tarball id="font-adobe-75dpi" branch="">
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+      <dep package="font-util" />
+    </dependencies>
+    <source hash="sha256:c6024a1e4a1e65f413f994dd08b734efd393ce0a502eb465deb77b9a36db4d09" href="http://www.x.org/releases/X11R7.7/src/everything/font-adobe-75dpi-1.0.3.tar.bz2" md5sum="6c9f26c92393c0756f3e8d614713495b" size="889542" />
+  </tarball>
+  <tarball id="font-adobe-utopia-100dpi" branch="">
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+      <dep package="font-util" />
+    </dependencies>
+    <source hash="sha256:d16f5e3f227cc6dd07a160a71f443559682dbc35f1c056a5385085aaec4fada5" href="http://www.x.org/releases/X11R7.7/src/everything/font-adobe-utopia-100dpi-1.0.4.tar.bz2" md5sum="66fb6de561648a6dce2755621d6aea17" size="353852" />
+  </tarball>
+  <tarball id="font-adobe-utopia-75dpi" branch="">
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+      <dep package="font-util" />
+    </dependencies>
+    <source hash="sha256:8732719c61f3661c8bad63804ebfd54fc7de21ab848e9a26a19b1778ef8b5c94" href="http://www.x.org/releases/X11R7.7/src/everything/font-adobe-utopia-75dpi-1.0.4.tar.bz2" md5sum="e99276db3e7cef6dccc8a57bc68aeba7" size="273484" />
+  </tarball>
+  <tarball id="font-adobe-utopia-type1" branch="">
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+      <dep package="font-util" />
+    </dependencies>
+    <source hash="sha256:979435105f897a70f8993fa02c8362160b0513366c2ab896965416f96dbb8077" href="http://www.x.org/releases/X11R7.7/src/everything/font-adobe-utopia-type1-1.0.4.tar.bz2" md5sum="fcf24554c348df3c689b91596d7f9971" size="269159" />
+  </tarball>
+  <tarball id="font-alias" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:8b453b2aae1cfa8090009ca037037b8c5e333550651d5a158b7264ce1d472c9a" href="http://www.x.org/releases/X11R7.7/src/everything/font-alias-1.0.3.tar.bz2" md5sum="6d25f64796fef34b53b439c2e9efa562" size="102537" />
+  </tarball>
+  <tarball id="font-arabic-misc">
+    <branch checkoutdir="xorg/font/font-arabic-misc" module="xorg/font/font-arabic-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-bh-100dpi">
+    <branch checkoutdir="xorg/font/font-bh-100dpi" module="xorg/font/font-bh-100dpi" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-bh-75dpi">
+    <branch checkoutdir="xorgfont/font-bh-75dpi" module="xorg/font/font-bh-75dpi" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-bh-lucidatypewriter-100dpi">
+    <branch checkoutdir="xorgfont/font-bh-lucidatypewriter-100dpi" module="xorg/font/font-bh-lucidatypewriter-100dpi" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-bh-lucidatypewriter-75dpi">
+    <branch checkoutdir="xorgfont/font-bh-lucidatypewriter-75dpi" module="xorg/font/font-bh-lucidatypewriter-75dpi" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-bh-ttf">
+    <branch checkoutdir="xorgfont/font-bh-ttf" module="xorg/font/font-bh-ttf" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-bh-type1">
+    <branch checkoutdir="xorgfont/font-bh-type1" module="xorg/font/font-bh-type1" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-bitstream-100dpi" branch="">
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+    <source hash="sha256:ebe0d7444e3d7c8da7642055ac2206f0190ee060700d99cd876f8fc9964cb6ce" href="http://www.x.org/releases/X11R7.7/src/everything/font-bitstream-100dpi-1.0.3.tar.bz2" md5sum="6b223a54b15ecbd5a1bc52312ad790d8" size="200276" />
+  </tarball>
+  <tarball id="font-bitstream-75dpi" branch="">
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+    <source hash="sha256:ba3f5e4610c07bd5859881660753ec6d75d179f26fc967aa776dbb3d5d5cf48e" href="http://www.x.org/releases/X11R7.7/src/everything/font-bitstream-75dpi-1.0.3.tar.bz2" md5sum="d7c0588c26fac055c0dd683fdd65ac34" size="174603" />
+  </tarball>
+  <tarball id="font-bitstream-type1" branch="">
+    <dependencies>
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+    <source hash="sha256:c6ea0569adad2c577f140328dc3302e729cb1b1ea90cd0025caf380625f8a688" href="http://www.x.org/releases/X11R7.7/src/everything/font-bitstream-type1-1.0.3.tar.bz2" md5sum="5e0c9895d69d2632e2170114f8283c11" size="415980" />
+  </tarball>
+  <tarball id="font-cronyx-cyrillic">
+    <branch checkoutdir="xorg/font/font-cronyx-cyrillic" module="xorg/font/font-cronyx-cyrillic" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-cursor-misc" branch="">
+    <dependencies>
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+    <source hash="sha256:17363eb35eece2e08144da5f060c70103b59d0972b4f4d77fd84c9a7a2dba635" href="http://www.x.org/releases/X11R7.7/src/everything/font-cursor-misc-1.0.3.tar.bz2" md5sum="3e0069d4f178a399cffe56daa95c2b63" size="102041" />
+  </tarball>
+  <tarball id="font-daewoo-misc">
+    <branch checkoutdir="xorgfont/font-daewoo-misc" module="xorg/font/font-daewoo-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-dec-misc">
+    <branch checkoutdir="xorgfont/font-dec-misc" module="xorg/font/font-dec-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-ibm-type1">
+    <branch checkoutdir="xorgfont/font-ibm-type1" module="xorg/font/font-ibm-type1" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-isas-misc">
+    <branch checkoutdir="xorgfont/font-isas-misc" module="xorg/font/font-isas-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-jis-misc">
+    <branch checkoutdir="xorgfont/font-jis-misc" module="xorg/font/font-jis-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-micro-misc">
+    <branch checkoutdir="xorgfont/font-micro-misc" module="xorg/font/font-micro-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-misc-cyrillic">
+    <branch checkoutdir="xorgfont/font-misc-cyrillic" module="xorg/font/font-misc-cyrillic" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-misc-ethiopic">
+    <branch checkoutdir="xorgfont/font-misc-ethiopic" module="xorg/font/font-misc-ethiopic" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-misc-meltho">
+    <branch checkoutdir="xorgfont/font-misc-meltho" module="xorg/font/font-misc-meltho" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-misc-misc" branch="">
+    <dependencies>
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+      <dep package="font-util" />
+    </dependencies>
+    <source hash="sha256:b8e77940e4e1769dc47ef1805918d8c9be37c708735832a07204258bacc11794" href="http://www.x.org/releases/X11R7.7/src/everything/font-misc-misc-1.1.2.tar.bz2" md5sum="c88eb44b3b903d79fb44b860a213e623" size="1933789" />
+  </tarball>
+  <tarball id="font-mutt-misc">
+    <branch checkoutdir="xorgfont/font-mutt-misc" module="xorg/font/font-mutt-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-schumacher-misc">
+    <branch checkoutdir="xorgfont/font-schumacher-misc" module="xorg/font/font-schumacher-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-screen-cyrillic">
+    <branch checkoutdir="xorgfont/font-screen-cyrillic" module="xorg/font/font-screen-cyrillic" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-sony-misc">
+    <branch checkoutdir="xorgfont/font-sony-misc" module="xorg/font/font-sony-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-sun-misc">
+    <branch checkoutdir="xorgfont/font-sun-misc" module="xorg/font/font-sun-misc" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-util" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:dfa9e55625a4e0250f32fabab1fd5c8ffcd2d1ff2720d6fcf0f74bc8a5929195" href="http://www.x.org/releases/X11R7.7/src/everything/font-util-1.3.0.tar.bz2" md5sum="ddfc8a89d597651408369d940d03d06b" size="142059" />
+  </tarball>
+  <tarball id="font-winitzki-cyrillic">
+    <branch checkoutdir="xorgfont/font-winitzki-cyrillic" module="xorg/font/font-winitzki-cyrillic" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="font-xfree86-type1">
+    <branch checkoutdir="xorgfont/font-xfree86-type1" module="xorg/font/font-xfree86-type1" />
+    <dependencies>
+      <dep package="bdftopcf" />
+      <dep package="mkfontscale" />
+      <dep package="mkfontdir" />
+      <dep package="fontconfig" />
+    </dependencies>
+  </tarball>
+  <tarball id="fontsproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:869c97e5a536a8f3c9bc8b9923780ff1f062094bab935e26f96df3d6f1aa68a9" href="http://www.x.org/releases/X11R7.7/src/everything/fontsproto-2.1.2.tar.bz2" md5sum="c5f4f1fb4ba7766eedbc9489e81f3be2" size="141990" />
+  </tarball>
+  <tarball id="glproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:990356ebe2e8966aa643287c9a485777957a49299dfb211654df5ff212dec171" href="http://www.x.org/releases/X11R7.7/src/everything/glproto-1.4.15.tar.bz2" md5sum="d1ff0c1acc605689919c1ee2fc9b5582" size="113671" />
+  </tarball>
+  <tarball id="iceauth" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libICE" />
+    </dependencies>
+    <source hash="sha256:1496b6a5cc8c1dca2f1b7cb24a12dee4b5c6c9ea2f03fb0dcba50b1d8ed906ab" href="http://www.x.org/releases/X11R7.7/src/everything/iceauth-1.0.5.tar.bz2" md5sum="08e3f6b523da8b0af179f22f339508b2" size="120847" />
+  </tarball>
+  <tarball id="inputproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:de7516ab25c299740da46c0f1af02f1831c5aa93b7283f512c0f35edaac2bcb0" href="http://www.x.org/releases/X11R7.7/src/everything/inputproto-2.2.tar.bz2" md5sum="13c8aedaf98a92e282b7e456c0a5bed9" size="178839" />
+  </tarball>
+  <tarball id="kbproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:037cac0aeb80c4fccf44bf736d791fccb2ff7fd34c558ef8f03ac60b61085479" href="http://www.x.org/releases/X11R7.7/src/everything/kbproto-1.0.6.tar.bz2" md5sum="677ea8523eec6caca86121ad2dca0b71" size="256988" />
+  </tarball>
+  <tarball id="libAppleWM">
+    <branch checkoutdir="xorg/lib/libAppleWM" module="xorg/lib/libAppleWM" />
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="applewmproto" />
+    </dependencies>
+  </tarball>
+  <tarball id="libFS" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="fontsproto" />
+      <dep package="libxtrans" />
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:7073761e7594d43180a922605fb64cce60e5ccb8c06f8efa24f2d4621f5e8315" href="http://www.x.org/releases/X11R7.7/src/everything/libFS-1.0.4.tar.bz2" md5sum="645f83160cf7b562734e2038045106d1" size="291155" />
+  </tarball>
+  <tarball id="libICE" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libxtrans" />
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:24a991284d02ff0c789bc8d11ad2e4dffe144cb70f24e28f9ce3e8b1ee08b71e" href="http://www.x.org/releases/X11R7.7/src/everything/libICE-1.0.8.tar.bz2" md5sum="471b5ca9f5562ac0d6eac7a0bf650738" size="365762" />
+  </tarball>
+  <tarball id="libSM" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libICE" />
+      <dep package="libxtrans" />
+    </dependencies>
+    <source hash="sha256:93c11d569c64f40723b93b44af1efb474a0cfe92573b0c8c330343cabb897f1d" href="http://www.x.org/releases/X11R7.7/src/everything/libSM-1.2.1.tar.bz2" md5sum="766de9d1e1ecf8bf74cebe2111d8e2bd" size="334696" />
+  </tarball>
+  <tarball id="libWindowsWM">
+    <branch checkoutdir="xorg/lib/libWindowsWM" module="xorg/lib/libWindowsWM" />
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="windowswmproto" />
+    </dependencies>
+  </tarball>
+  <tarball id="libX11" branch="">
+    <dependencies>
+      <dep package="libxcb" />
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="bigreqsproto" />
+      <dep package="xextproto" />
+      <dep package="libxtrans" />
+      <dep package="libXau" />
+      <dep package="xcmiscproto" />
+      <dep package="libXdmcp" />
+      <dep package="kbproto" />
+      <dep package="inputproto" />
+      <dep package="xf86bigfontproto" />
+    </dependencies>
+    <source hash="sha256:c382efd7e92bfc3cef39a4b7f1ecf2744ba4414a705e3bc1e697f75502bd4d86" href="http://www.x.org/releases/X11R7.7/src/everything/libX11-1.5.0.tar.bz2" md5sum="78b4b3bab4acbdf0abcfca30a8c70cc6" size="2322265" />
+  </tarball>
+  <tarball id="libXRes" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="resourceproto" />
+    </dependencies>
+    <source hash="sha256:ff8661c925e8b182f98ae98f02bbd93c55259ef7f34a92c1a126b6074ebde890" href="http://www.x.org/releases/X11R7.7/src/everything/libXres-1.0.6.tar.bz2" md5sum="80d0c6d8522fa7a645e4f522e9a9cd20" size="282035" />
+  </tarball>
+  <tarball id="libXScrnSaver" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="scrnsaverproto" />
+    </dependencies>
+    <source hash="sha256:8ff1efa7341c7f34bcf9b17c89648d6325ddaae22e3904e091794e0b4426ce1d" href="http://www.x.org/releases/X11R7.7/src/everything/libXScrnSaver-1.2.2.tar.bz2" md5sum="7a773b16165e39e938650bcc9027c1d5" size="290437" />
+  </tarball>
+  <tarball id="libXau" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+    </dependencies>
+    <source hash="sha256:7153ba503e2362d552612d9dc2e7d7ad3106d5055e310a26ecf28addf471a489" href="http://www.x.org/releases/X11R7.7/src/everything/libXau-1.0.7.tar.bz2" md5sum="2d241521df40d27034413436d1a1465c" size="274681" />
+  </tarball>
+  <tarball id="libXaw" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libX11" />
+      <dep package="libXt" />
+      <dep package="libXmu" />
+      <dep package="libXpm" />
+    </dependencies>
+    <source hash="sha256:87a874acbb71d1ee59b8047312fc91d89dcb373e2970f121184cdae29a3d9492" href="http://www.x.org/releases/X11R7.7/src/everything/libXaw-1.0.11.tar.bz2" md5sum="f39942f2cab379fc9b4c3731bf191b84" size="649633" />
+  </tarball>
+  <tarball id="libXcomposite" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="compositeproto" />
+      <dep package="libX11" />
+      <dep package="libXfixes" />
+      <dep package="libXext" />
+    </dependencies>
+    <source hash="sha256:32294d28f4ee46db310c344546d98484728b7d52158c6d7c25bba02563b41aad" href="http://www.x.org/releases/X11R7.7/src/everything/libXcomposite-0.4.3.tar.bz2" md5sum="a60e0b5c276d0aa9e2d3b982c98f61c8" size="246715" />
+  </tarball>
+  <tarball id="libXcursor" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libXrender" />
+      <dep package="libX11" />
+      <dep package="libXfixes" />
+    </dependencies>
+    <source hash="sha256:f78827de4a1b7ce8cceca24a9ab9d1b1d2f6a61362f505166ffc19b07c0bad8f" href="http://www.x.org/releases/X11R7.7/src/everything/libXcursor-1.1.13.tar.bz2" md5sum="52efa81b7f26c8eda13510a2fba98eea" size="302525" />
+  </tarball>
+  <tarball id="libXdamage" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="damageproto" />
+      <dep package="libXfixes" />
+    </dependencies>
+    <source hash="sha256:bc6169c826d3cb17435ca84e1b479d65e4b51df1e48bbc3ec39a9cabf842c7a8" href="http://www.x.org/releases/X11R7.7/src/everything/libXdamage-1.1.3.tar.bz2" md5sum="44774e1a065158b52f1a0da5100cebec" size="249029" />
+  </tarball>
+  <tarball id="libXdmcp" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+    </dependencies>
+    <source hash="sha256:9ace6d4230f9dce4ed090692f82f613253ada8f887b23b3d8ff3dd4e3a7c118e" href="http://www.x.org/releases/X11R7.7/src/everything/libXdmcp-1.1.1.tar.bz2" md5sum="b94af6cef211cf3ee256f7e81f70fcd9" size="310878" />
+  </tarball>
+  <tarball id="libXext" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libX11" />
+      <dep package="xextproto" />
+    </dependencies>
+    <source hash="sha256:56229c617eb7bfd6dec40d2805bc4dfb883dfe80f130d99b9a2beb632165e859" href="http://www.x.org/releases/X11R7.7/src/everything/libXext-1.3.1.tar.bz2" md5sum="71251a22bc47068d60a95f50ed2ec3cf" size="372728" />
+  </tarball>
+  <tarball id="libXfixes" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="fixesproto" />
+    </dependencies>
+    <source hash="sha256:537a2446129242737a35db40081be4bbcc126e56c03bf5f2b142b10a79cda2e3" href="http://www.x.org/releases/X11R7.7/src/everything/libXfixes-5.0.tar.bz2" md5sum="678071bd7f9f7467e2fc712d81022318" size="253777" />
+  </tarball>
+  <tarball id="libXfont" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libxtrans" />
+      <dep package="fontsproto" />
+      <dep package="libfontenc" />
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:bbf96fb80b6b95cdb1dc968085082a6e668193a54cd9d6e2af669909c0cb7170" href="http://www.x.org/releases/X11R7.7/src/everything/libXfont-1.4.5.tar.bz2" md5sum="6851da5dae0a6cf5f7c9b9e2b05dd3b4" size="470879" />
+  </tarball>
+  <tarball id="libXft" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libXrender" />
+      <dep package="fontconfig" />
+    </dependencies>
+    <source hash="sha256:7fce32b92dcb7b2869bed567af2abc7bbad0d5d6fcf471b8a3e137964a31bbbd" href="http://www.x.org/releases/X11R7.7/src/everything/libXft-2.3.1.tar.bz2" md5sum="78d64dece560c9e8699199f3faa521c0" size="311556" />
+  </tarball>
+  <tarball id="libXi" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libX11" />
+      <dep package="xextproto" />
+      <dep package="libXext" />
+      <dep package="inputproto" />
+    </dependencies>
+    <source hash="sha256:f2e3627d7292ec5eff488ab58867fba14a62f06e72a8d3337ab6222c09873109" href="http://www.x.org/releases/X11R7.7/src/everything/libXi-1.6.1.tar.bz2" md5sum="78ee882e1ff3b192cf54070bdb19938e" size="427062" />
+  </tarball>
+  <tarball id="libXinerama" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="xineramaproto" />
+    </dependencies>
+    <source hash="sha256:a4e77c2fd88372e4ae365f3ca0434a23613da96c5b359b1a64bf43614ec06aac" href="http://www.x.org/releases/X11R7.7/src/everything/libXinerama-1.1.2.tar.bz2" md5sum="cb45d6672c93a608f003b6404f1dd462" size="279682" />
+  </tarball>
+  <tarball id="libXmu" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXt" />
+      <dep package="libXext" />
+    </dependencies>
+    <source hash="sha256:709081c550cc3a866d7c760a3f97384a1fe16e27fc38fe8169b8db9f33aa7edd" href="http://www.x.org/releases/X11R7.7/src/everything/libXmu-1.1.1.tar.bz2" md5sum="a4efff8de85bd45dd3da124285d10c00" size="383473" />
+  </tarball>
+  <tarball id="libXpm" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="x11proto" />
+      <dep package="libXt" />
+      <dep package="libXext" />
+    </dependencies>
+    <source hash="sha256:a6db7e234750e7d60330017972e31d8e1f29f0a8c1391e4ac82f6102d919a735" href="http://www.x.org/releases/X11R7.7/src/everything/libXpm-3.5.10.tar.bz2" md5sum="7ae7eff7a14d411e84a67bd166bcec1a" size="431310" />
+  </tarball>
+  <tarball id="libXrandr" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="randrproto" />
+    </dependencies>
+    <source hash="sha256:7eaca216ab5233d7396119eb87c1989d350a3efead104d54b55f22cdd1d99b81" href="http://www.x.org/releases/X11R7.7/src/everything/libXrandr-1.3.2.tar.bz2" md5sum="92473da2fccf5fac665be4fa4f2037fa" size="274401" />
+  </tarball>
+  <tarball id="libXrender" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="renderproto" />
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:f9b46b93c9bc15d5745d193835ac9ba2a2b411878fad60c504bbb8f98492bbe6" href="http://www.x.org/releases/X11R7.7/src/everything/libXrender-0.9.7.tar.bz2" md5sum="ee62f4c7f0f16ced4da63308963ccad2" size="281098" />
+  </tarball>
+  <tarball id="libXt" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libSM" />
+      <dep package="libX11" />
+      <dep package="x11proto" />
+    </dependencies>
+    <source hash="sha256:8db593c3fc5ffc4e9cd854ba50af1eac9b90d66521ba17802b8f1e0d2d7f05bd" href="http://www.x.org/releases/X11R7.7/src/everything/libXt-1.1.3.tar.bz2" md5sum="a6f137ae100e74ebe3b71eb4a38c40b3" size="734679" />
+  </tarball>
+  <tarball id="libXtst" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="libXi" />
+      <dep package="recordproto" />
+      <dep package="xextproto" />
+    </dependencies>
+    <source hash="sha256:7eea3e66e392aca3f9dad6238198753c28e1c32fa4903cbb7739607a2504e5e0" href="http://www.x.org/releases/X11R7.7/src/everything/libXtst-1.2.1.tar.bz2" md5sum="e8abc5c00c666f551cf26aa53819d592" size="313147" />
+  </tarball>
+  <tarball id="libXv" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="videoproto" />
+    </dependencies>
+    <source hash="sha256:5d664aeb641f8c867331a0c6b4574a5e7e420f00bf5fcefd874e8d003ea59010" href="http://www.x.org/releases/X11R7.7/src/everything/libXv-1.0.7.tar.bz2" md5sum="5e1ac203ccd3ce3e89755ed1fbe75b0b" size="285379" />
+  </tarball>
+  <tarball id="libXvMC" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="libXv" />
+      <dep package="xextproto" />
+      <dep package="videoproto" />
+    </dependencies>
+    <source hash="sha256:28f085fc8518a3dadfe355360705d50153051f09898093e69af806c0b437cea3" href="http://www.x.org/releases/X11R7.7/src/everything/libXvMC-1.0.7.tar.bz2" md5sum="3340c99ff556ea2457b4be47f5cb96fa" size="299745" />
+  </tarball>
+  <tarball id="libXxf86dga" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="xf86dgaproto" />
+    </dependencies>
+    <source hash="sha256:551fa374dbef0f977de1f35d005fa9ffe92b7a87e82dbe62d6a4640f5b0b4994" href="http://www.x.org/releases/X11R7.7/src/everything/libXxf86dga-1.1.3.tar.bz2" md5sum="b7f38465c46e7145782d37dbb9da8c09" size="290347" />
+  </tarball>
+  <tarball id="libXxf86vm" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="xf86vidmodeproto" />
+    </dependencies>
+    <source hash="sha256:a564172fb866b1b587bbccb7d041088931029845245e0d15c32ca7f1bb48fc84" href="http://www.x.org/releases/X11R7.7/src/everything/libXxf86vm-1.1.2.tar.bz2" md5sum="ffd93bcedd8b2b5aeabf184e7b91f326" size="284717" />
+  </tarball>
+  <tarball id="libdmx" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="xextproto" />
+      <dep package="dmxproto" />
+    </dependencies>
+    <source hash="sha256:a7870b648a8768d65432af76dd11581ff69f3955118540d5967eb1eef43838ba" href="http://www.x.org/releases/X11R7.7/src/everything/libdmx-1.1.2.tar.bz2" md5sum="782ced3a9e754dfeb53a8a006a75eb1a" size="290694" />
+  </tarball>
+  <tarball id="libfontenc" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+      <dep package="font-util" />
+    </dependencies>
+    <source hash="sha256:de72812f1856bb63bd2226ec8c2e2301931d3c72bd0f08b0d63a0cdf0722017f" href="http://www.x.org/releases/X11R7.7/src/everything/libfontenc-1.1.1.tar.bz2" md5sum="a2a861f142c3b4367f14fc14239fc1f7" size="289688" />
+  </tarball>
+  <tarball id="libpciaccess" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:27ab68f645691a4ca258dcc9d131040586e134f9233ce079794496f6264da084" href="http://www.x.org/releases/X11R7.7/src/everything/libpciaccess-0.13.1.tar.bz2" md5sum="399a419ac6a54f0fc07c69c9bdf452dc" size="352351" />
+  </tarball>
+  <tarball id="libxcb" branch="">
+    <dependencies>
+      <dep package="xcb-proto" />
+      <dep package="pthread-stubs" />
+      <dep package="libXau" />
+    </dependencies>
+    <source hash="sha256:d2f46811e950710e7e79e45615d24f2c7ec318b9de9dc717972723da58bffa0d" href="http://www.x.org/releases/X11R7.7/src/everything/libxcb-1.8.1.tar.bz2" md5sum="9da03df9e2f4c048202920d9f6a7e123" size="375955" />
+  </tarball>
+  <tarball id="libxkbfile" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="libX11" />
+      <dep package="kbproto" />
+    </dependencies>
+    <source hash="sha256:8aa94e19c537c43558f30906650cea6e15fa012591445d9f927658c3b32a8f3a" href="http://www.x.org/releases/X11R7.7/src/everything/libxkbfile-1.0.8.tar.bz2" md5sum="19e6533ae64abba0773816a23f2b9507" size="335788" />
+  </tarball>
+  <tarball id="libxtrans" branch="">
+    <dependencies>
+      <dep package="macros" />
+    </dependencies>
+    <source hash="sha256:7f811191ba70a34a9994d165ea11a239e52c527f039b6e7f5011588f075fe1a6" href="http://www.x.org/releases/X11R7.7/src/everything/xtrans-1.2.7.tar.bz2" md5sum="84c66908cf003ad8c272b0eecbdbaee3" size="173025" />
+  </tarball>
+  <tarball id="luit" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libfontenc" />
+    </dependencies>
+    <source hash="sha256:30b0e787cb07a0f504b70f1d6123930522111ce9d4276f6683a69b322b49c636" href="http://www.x.org/releases/X11R7.7/src/everything/luit-1.1.1.tar.bz2" md5sum="c4a3664e08e5a47c120ff9263ee2f20c" size="140044" />
+  </tarball>
+  <tarball id="macros" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:7d79edde72fc17dcdc56cfbe2f8ff384d1bffd1d8c58c0fd25970f5b2ccb75ed" href="http://www.x.org/releases/X11R7.7/src/everything/util-macros-1.17.tar.bz2" md5sum="4f41667e1bf4938bb2b24fa09d517f77" size="77029" />
+  </tarball>
+  <tarball id="makedepend" branch="">
+    <dependencies>
+      <dep package="macros" />
+      <dep package="x11proto" />
+    </dependencies>
+    <source hash="sha256:ab56b8aeee00ed78d93c57d102e33ef4e6828ef5edd7108574966ed7d212f7fe" href="http://www.x.org/releases/X11R7.7/src/everything/makedepend-1.0.4.tar.bz2" md5sum="7acb9a831817fdd11ba7f7aaa3c74fd8" size="131683" />
+  </tarball>
+  <tarball id="mesa-demos">
+    <branch checkoutdir="mesa/demos" module="mesa/demos" />
+    <dependencies>
+      <dep package="libGL" />
+    </dependencies>
+  </tarball>
+  <tarball id="mkfontdir" branch="">
+    <dependencies>
+      <dep package="mkfontscale" />
+    </dependencies>
+    <source hash="sha256:56d52a482df130484e51fd066d1b6eda7c2c02ddbc91fe6e2be1b9c4e7306530" href="http://www.x.org/releases/X11R7.7/src/everything/mkfontdir-1.0.7.tar.bz2" md5sum="18c429148c96c2079edda922a2b67632" size="108195" />
+  </tarball>
+  <tarball id="mkfontscale" branch="">
+    <dependencies>
+      <dep package="libfontenc" />
+    </dependencies>
+    <source hash="sha256:ce55f862679b8ec127d7f7315ac04a8d64a0d90a0309a70dc56c1ba3f9806994" href="http://www.x.org/releases/X11R7.7/src/everything/mkfontscale-1.1.0.tar.bz2" md5sum="414fcb053418fb1418e3a39f4a37e0f7" size="131478" />
+  </tarball>
+  <tarball id="pthread-stubs" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:35b6d54e3cc6f3ba28061da81af64b9a92b7b757319098172488a660e3d87299" href="http://www.x.org/releases/X11R7.7/src/everything/libpthread-stubs-0.3.tar.bz2" md5sum="e8fa31b42e13f87e8f5a7a2b731db7ee" size="203468" />
+  </tarball>
+  <tarball id="randrproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:d90d00612cc49292bd8d9dc19efb1c9187385fbe87590d7279a02e5e1066dc71" href="http://www.x.org/releases/X11R7.7/src/everything/randrproto-1.3.2.tar.bz2" md5sum="597491c0d8055e2a66f11350c4985775" size="122915" />
+  </tarball>
+  <tarball id="recordproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:a777548d2e92aa259f1528de3c4a36d15e07a4650d0976573a8e2ff5437e7370" href="http://www.x.org/releases/X11R7.7/src/everything/recordproto-1.14.2.tar.bz2" md5sum="1b4e5dede5ea51906f1530ca1e21d216" size="123033" />
+  </tarball>
+  <tarball id="renderproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:06735a5b92b20759204e4751ecd6064a2ad8a6246bb65b3078b862a00def2537" href="http://www.x.org/releases/X11R7.7/src/everything/renderproto-0.11.1.tar.bz2" md5sum="a914ccc1de66ddeb4b611c6b0686e274" size="105741" />
+  </tarball>
+  <tarball id="resourceproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:3c66003a6bdeb0f70932a9ed3cf57cc554234154378d301e0c5cfa189d8f6818" href="http://www.x.org/releases/X11R7.7/src/everything/resourceproto-1.2.0.tar.bz2" md5sum="cfdb57dae221b71b2703f8e2980eaaf4" size="102992" />
+  </tarball>
+  <tarball id="scrnsaverproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:8bb70a8da164930cceaeb4c74180291660533ad3cc45377b30a795d1b85bcd65" href="http://www.x.org/releases/X11R7.7/src/everything/scrnsaverproto-1.2.2.tar.bz2" md5sum="edd8a73775e8ece1d69515dd17767bfb" size="118820" />
+  </tarball>
+  <tarball id="sessreg" branch="">
+    <dependencies>
+      <dep package="x11proto" />
+    </dependencies>
+    <source hash="sha256:8734ee580264ab92e984d8f84611dada89906d6b548334a5e7d4b0ddba7c2e52" href="http://www.x.org/releases/X11R7.7/src/everything/sessreg-1.0.7.tar.bz2" md5sum="e99172cbd72700eeeae99f64632b5dc2" size="120461" />
+  </tarball>
+  <tarball id="setxkbmap" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:3d305c9d1f38224169b2e501ef0665cc3ab52d4dbc2b9a60c9dbb047f77ddec6" href="http://www.x.org/releases/X11R7.7/src/everything/setxkbmap-1.3.0.tar.bz2" md5sum="1001771344608e120e943a396317c33a" size="125844" />
+  </tarball>
+  <tarball id="smproxy" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libSM" />
+      <dep package="libXt" />
+    </dependencies>
+    <source hash="sha256:c72ccb094e4971ec2339ee06439114e86ffdcdf449a6accd5552e817142fd609" href="http://www.x.org/releases/X11R7.7/src/everything/smproxy-1.0.5.tar.bz2" md5sum="edce41bd7562dcdfb813e05dbeede8ac" size="118207" />
+  </tarball>
+  <tarball id="videoproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:3ec76d24931d1e08c6c8d0b89a25e32dc44bc8f87d1dcb3fe201e3c99f89635a" href="http://www.x.org/releases/X11R7.7/src/everything/videoproto-2.3.1.tar.bz2" md5sum="c3b348c6e2031b72b11ae63fc7f805c2" size="100391" />
+  </tarball>
+  <tarball id="windowswmproto">
+    <branch checkoutdir="xorg/proto/windowswmproto" module="xorg/proto/windowswmproto" />
+    <dependencies>
+      <dep package="macros" />
+    </dependencies>
+  </tarball>
+  <tarball id="x11perf" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXrender" />
+      <dep package="libXft" />
+      <dep package="libXext" />
+    </dependencies>
+    <source hash="sha256:24ee8857a2bf414b360addabf1c27ef797f7f504ee9bc409c151760bfbe53184" href="http://www.x.org/releases/X11R7.7/src/everything/x11perf-1.5.4.tar.bz2" md5sum="5c3c7431a38775caaea6051312a49bc9" size="167655" />
+  </tarball>
+  <tarball id="x11proto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:ade04a0949ebe4e3ef34bb2183b1ae8e08f6f9c7571729c9db38212742ac939e" href="http://www.x.org/releases/X11R7.7/src/everything/xproto-7.0.23.tar.bz2" md5sum="d4d241a4849167e4e694fe73371c328c" size="290114" />
+  </tarball>
+  <tarball id="xauth" branch="">
+    <dependencies>
+      <dep package="libXext" />
+      <dep package="libXmu" />
+    </dependencies>
+    <source hash="sha256:84f78c08ebc6687e2e36c9ff1f5610988c6a03fc5bf51ef89aec4d155de3028d" href="http://www.x.org/releases/X11R7.7/src/everything/xauth-1.0.7.tar.bz2" md5sum="cbcbd8f2156a53b609800bec4c6b6c0e" size="139436" />
+  </tarball>
+  <tarball id="xbacklight" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXrandr" />
+    </dependencies>
+    <source hash="sha256:af2f02d09de8a19848e3f3b322320141bceebf9d4097b7bd505457a1bd936509" href="http://www.x.org/releases/X11R7.7/src/everything/xbacklight-1.1.2.tar.bz2" md5sum="c9891d6a3f3129d56cede72daa0ba26c" size="102939" />
+  </tarball>
+  <tarball id="xcb-proto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:ad5d99887d811c9817f1916d7b3f5dc6c21414c093256cbeffb945aacdc34437" href="http://www.x.org/releases/X11R7.7/src/everything/xcb-proto-1.7.1.tar.bz2" md5sum="948fec39dd42f3694edd5d9689735ec4" size="106040" />
+  </tarball>
+  <tarball id="xcmiscproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:b13236869372256c36db79ae39d54214172677fb79e9cdc555dceec80bd9d2df" href="http://www.x.org/releases/X11R7.7/src/everything/xcmiscproto-1.2.2.tar.bz2" md5sum="5f4847c78e41b801982c8a5e06365b24" size="112486" />
+  </tarball>
+  <tarball id="xcmsdb" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:e460b9bee74200fac42294ae3762308b8c6024186d317f70a36acf41c338ba0e" href="http://www.x.org/releases/X11R7.7/src/everything/xcmsdb-1.0.4.tar.bz2" md5sum="5812be48cbbec1068e7b718eec801766" size="136502" />
+  </tarball>
+  <tarball id="xcursorgen" branch="">
+    <dependencies>
+      <dep package="libXcursor" />
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:bc7171a0fa212da866fca2301241630e2009aea8c4ddb75f21b51a31c2e4c581" href="http://www.x.org/releases/X11R7.7/src/everything/xcursorgen-1.0.5.tar.bz2" md5sum="09f56978a62854534deacc8aa8ff3031" size="116340" />
+  </tarball>
+  <tarball id="xdpyinfo" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXext" />
+      <dep package="libXtst" />
+    </dependencies>
+    <source hash="sha256:23ee4944a32b5701b4379cb420729eb7a4dde54de2b5b006d4747855efd6d73f" href="http://www.x.org/releases/X11R7.7/src/everything/xdpyinfo-1.3.0.tar.bz2" md5sum="1ef08f4c8d0e669c2edd49e4a1bf650d" size="127611" />
+  </tarball>
+  <tarball id="xdriinfo" branch="">
+    <dependencies>
+      <dep package="glproto" />
+      <dep package="libGL" />
+    </dependencies>
+    <source hash="sha256:35c6e43d3b68ef5d93d013b4517014fb890bad96b2c801abf4f607927a94cb1c" href="http://www.x.org/releases/X11R7.7/src/everything/xdriinfo-1.0.4.tar.bz2" md5sum="3d3cad4d754e10e325438193433d59fd" size="104296" />
+  </tarball>
+  <tarball id="xev" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:3786a77dab17741d508d5d117a0ff33bb6eabf93e0935388b5f920bfcf2fb38f" href="http://www.x.org/releases/X11R7.7/src/everything/xev-1.2.0.tar.bz2" md5sum="2727c72f3eba0c23f8f6b2e618d195a2" size="122329" />
+  </tarball>
+  <tarball id="xextproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:7c53b105407ef3b2eb180a361bd672c1814524a600166a0a7dbbe76b97556d1a" href="http://www.x.org/releases/X11R7.7/src/everything/xextproto-7.2.1.tar.bz2" md5sum="eaac343af094e6b608cf15cfba0f77c5" size="229282" />
+  </tarball>
+  <tarball id="xf86-input-evdev" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:3ee1feee0ccf748005ca30b0993d0c1b80f85158b726745f9e0cb220902d6ec7" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-input-evdev-2.7.0.tar.bz2" md5sum="4449b2e94900e98d2f41c2f46dd0397e" size="360116" />
+  </tarball>
+  <tarball id="xf86-input-joystick" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:1ded5d8f990a7687c44b45f68ad4a516f14fa94efa9da436955011ee6a9bf7f5" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-input-joystick-1.6.1.tar.bz2" md5sum="01f416753016f01e328b1098157a5266" size="323230" />
+  </tarball>
+  <tarball id="xf86-input-keyboard" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:aa9ec96e7f7f87bc086cb86b871ee6f4b9a7809fb1e7d50d0abbd7c2e50a8cc3" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-input-keyboard-1.6.1.tar.bz2" md5sum="09744e8dc9a1fe5e61927c1073cd3428" size="304166" />
+  </tarball>
+  <tarball id="xf86-input-mouse" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:332b7357c18e6b9daba51c8ed48ce118e9b51fb5990b6a2a68637be62da7413b" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-input-mouse-1.7.2.tar.bz2" md5sum="871c828b88e9c973f1457724b35576fb" size="341378" />
+  </tarball>
+  <tarball id="xf86-input-synaptics">
+    <branch checkoutdir="xorg/driver/xf86-input-synaptics" module="xorg/driver/xf86-input-synaptics" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-input-vmmouse">
+    <branch checkoutdir="xorg/driver/xf86-input-vmmouse" module="xorg/driver/xf86-input-vmmouse" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-input-void" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:2ab95865252c64cc88050fa0089a74e063c357b71907bf9be7886047c4987505" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-input-void-1.4.0.tar.bz2" md5sum="93821f21e807260b05431c62437a8b32" size="273454" />
+  </tarball>
+  <tarball id="xf86-video-apm">
+    <branch checkoutdir="xorg/driver/xf86-video-apm" module="xorg/driver/xf86-video-apm" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-ark">
+    <branch checkoutdir="xorg/driver/xf86-video-ark" module="xorg/driver/xf86-video-ark" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-ast">
+    <branch checkoutdir="xorg/driver/xf86-video-ast" module="xorg/driver/xf86-video-ast" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-ati" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:4ffe435ef8fbe0989f6576f04f789e147a2de7fdefc3644e39d5ef626c37ef85" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-ati-6.14.4.tar.bz2" md5sum="17dd4f0bf4dbe9839e5f7d1161994222" size="1108681" />
+  </tarball>
+  <tarball id="xf86-video-cirrus" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:2b07fa5d4a86acb277d72c7ae35566ae21b08836645c6a88e7662422af5e962e" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-cirrus-1.4.0.tar.bz2" md5sum="1e449789da866f974dbf6cbe3c8cc7bf" size="317013" />
+  </tarball>
+  <tarball id="xf86-video-dummy" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:d5adc63543bb93b6d88008ea746303a2ab3e8b570974704926e81d882728d95f" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-dummy-0.3.5.tar.bz2" md5sum="89701f372eed9ed541cf00d57c78e7ef" size="274761" />
+  </tarball>
+  <tarball id="xf86-video-fbdev" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:93b271b4b41d7e5ca108849a583b9523e96c51813d046282285355b7001f82d5" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-fbdev-0.4.2.tar.bz2" md5sum="53a533d9e0c2da50962282526bace074" size="263094" />
+  </tarball>
+  <tarball id="xf86-video-geode" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:c320a2a314fc6c7a5d2dfb6a52c8fec23ab8f1b99c689ca618f02c279a64e226" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-geode-2.11.13.tar.bz2" md5sum="0c5a3cac3531aec0eae7f5f6b3212eb4" size="648657" />
+  </tarball>
+  <tarball id="xf86-video-glide">
+    <branch checkoutdir="xorg/driver/xf86-video-glide" module="xorg/driver/xf86-video-glide" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-glint" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:9aa9689436fc78a71145d4caeaf63b0e80f9abd54e9b4a3066f62ee5b334c359" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-glint-1.2.7.tar.bz2" md5sum="c4edb998485020debffeafc491ea759e" size="397381" />
+  </tarball>
+  <tarball id="xf86-video-i128" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:3eedeb1e575e96b2ebebdf894c515e8543900aa3f9f85d10120b8240264333ea" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-i128-1.3.5.tar.bz2" md5sum="392c4ffd3c752af6f92e71e1efd68c66" size="306803" />
+  </tarball>
+  <tarball id="xf86-video-i740">
+    <branch checkoutdir="xorg/driver/xf86-video-i740" module="xorg/driver/xf86-video-i740" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-impact">
+    <branch checkoutdir="xorg/driver/xf86-video-impact" module="xorg/driver/xf86-video-impact" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-intel" branch="">
+    <dependencies>
+      <dep package="xserver" />
+      <dep package="x11proto" />
+      <dep package="libXvMC" />
+    </dependencies>
+    <source hash="sha256:32133d61b14ce3b45b83a60e4ed8eb75159259d708f056144250aaeabf16e4bc" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-intel-2.19.0.tar.bz2" md5sum="f397bddfc88d4c9b30b56526c1e02e8e" size="1463260" />
+  </tarball>
+  <tarball id="xf86-video-mach64" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:9f6ad49f07c8785a64caac6f4aaf58fc7746a24b718491d047c45bc1ee9e834e" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-mach64-6.9.1.tar.bz2" md5sum="8484c18f08e77564a56ccbf226694038" size="534392" />
+  </tarball>
+  <tarball id="xf86-video-mga" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:ca983d780dd90115c0599980a7a83425b5e4eeb16f2e8c7fed15823fcbe7830e" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-mga-1.5.0.tar.bz2" md5sum="ff7a9d63978f538a7d5ff5dafe431562" size="431769" />
+  </tarball>
+  <tarball id="xf86-video-neomagic" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:b19ed2a33e8d9a3e2bfc1ae3e8ff49031b7d34dec786e4a5e060e68e48649888" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-neomagic-1.2.6.tar.bz2" md5sum="e5f25c01492d96ddd0171454a8e6bd39" size="325498" />
+  </tarball>
+  <tarball id="xf86-video-newport">
+    <branch checkoutdir="xorg/driver/xf86-video-newport" module="xorg/driver/xf86-video-newport" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-nv" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:6cf726cc8377cd823ea6038938ea8a88e883fea01b13a749b5491e26535cf415" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-nv-2.1.18.tar.bz2" md5sum="b12f0b2114849d1a542d8084732573d3" size="354719" />
+  </tarball>
+  <tarball id="xf86-video-openchrome" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:e7558edc144a08371493432014a7b88ee26ec35d00ef96f2ea24bd7872b0ff41" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-openchrome-0.2.906.tar.bz2" md5sum="244507baf1900f1e923604c4a0f05925" size="514154" />
+  </tarball>
+  <tarball id="xf86-video-r128" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:7b41135c3d177e61644573e5c16e35fd9eff98b4d6685c9c6de9e33401e904b1" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-r128-6.8.2.tar.bz2" md5sum="31e0358b5d1189e3f30f5b11e9b86865" size="469957" />
+  </tarball>
+  <tarball id="xf86-video-s3">
+    <branch checkoutdir="xorg/driver/xf86-video-s3" module="xorg/driver/xf86-video-s3" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-s3virge">
+    <branch checkoutdir="xorg/driver/xf86-video-s3virge" module="xorg/driver/xf86-video-s3virge" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-savage" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:3a666a66339686ad4dd85b0665cc300e8a7fc6d38b49a9e8e8d48f393627be49" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-savage-2.3.4.tar.bz2" md5sum="664c7d9c93049ebe96af262ec448451f" size="392823" />
+  </tarball>
+  <tarball id="xf86-video-siliconmotion">
+    <branch checkoutdir="xorg/driver/xf86-video-siliconmotion" module="xorg/driver/xf86-video-siliconmotion" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-sis" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:4e841080ea524f37d887ef4ee50df5b9f7f5b417abddc9eb8ddad19128c0b10d" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-sis-0.10.4.tar.bz2" md5sum="e1dda5365ad28ef3165fd0ed25952d9c" size="701447" />
+  </tarball>
+  <tarball id="xf86-video-sunbw2">
+    <branch checkoutdir="xorg/driver/xf86-video-sunbw2" module="xorg/driver/xf86-video-sunbw2" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-suncg6" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:d1216c7c2be78d1dafad0cd46e464e9fa08f5e04544b76d9a0c547374c85801f" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-suncg6-1.1.1.tar.bz2" md5sum="bc9904a9129aaf73408568ae1e2fa65f" size="229111" />
+  </tarball>
+  <tarball id="xf86-video-sunffb" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:fd377af6e366e8e3a77c8ff825a009138c8343c0007bbf070ad605a649577e11" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-sunffb-1.2.1.tar.bz2" md5sum="1bb374fe5ab3ed780d353b2b12ba6255" size="283427" />
+  </tarball>
+  <tarball id="xf86-video-tdfx" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:e0b931dea0fb1ebfaa628a3dc07bf6945b377d3f7bbfd3a43ca4c80c46d48f88" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-tdfx-1.4.4.tar.bz2" md5sum="890d6c96c12e91e22b4ceaa9ef93b442" size="338767" />
+  </tarball>
+  <tarball id="xf86-video-tga" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:70a4754ef6602cf48d910b9727d015cb3cae946c096ef260b56dfe2f80cdb855" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-tga-1.2.1.tar.bz2" md5sum="bcbceda78395de74544c83b46a7700cd" size="273334" />
+  </tarball>
+  <tarball id="xf86-video-trident" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:4bb3d091ab7788e1883d6d9e7e0c7ecbf9f57e5ef03d94a5082c2870dbbfc50b" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-trident-1.3.5.tar.bz2" md5sum="5ca073f0ca52b83e51def3115e6cae4a" size="334649" />
+  </tarball>
+  <tarball id="xf86-video-v4l">
+    <branch checkoutdir="xorg/driver/xf86-video-v4l" module="xorg/driver/xf86-video-v4l" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86-video-vesa" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:e4a1038d5bc8884de461737f68f963651ef91137976388e1db4efc3991d01573" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-vesa-2.3.1.tar.bz2" md5sum="02e6eacc2d1e07ac893b62481905d6f0" size="287818" />
+  </tarball>
+  <tarball id="xf86-video-vmware" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:c827875fd94805ec9b925fe09aaa973e7e3f9096c7ef311d449c3f134ae75147" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-vmware-12.0.2.tar.bz2" md5sum="0743ec7c479603fba60d118858fd5783" size="432468" />
+  </tarball>
+  <tarball id="xf86-video-voodoo" branch="">
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+    <source hash="sha256:f00238bbcf61dba726deedcd4d7416923844e3b0116671a1b1df8bf43d224741" href="http://www.x.org/releases/X11R7.7/src/everything/xf86-video-voodoo-1.2.4.tar.bz2" md5sum="ce8b848e00883ecb88b21ca03891b780" size="274523" />
+  </tarball>
+  <tarball id="xf86-video-wsfb">
+    <branch checkoutdir="xorg/driver/xf86-video-wsfb" module="xorg/driver/xf86-video-wsfb" />
+    <dependencies>
+      <dep package="xserver" />
+    </dependencies>
+  </tarball>
+  <tarball id="xf86bigfontproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:ba9220e2c4475f5ed2ddaa7287426b30089e4d29bd58d35fad57ba5ea43e1648" href="http://www.x.org/releases/X11R7.7/src/everything/xf86bigfontproto-1.2.0.tar.bz2" md5sum="120e226ede5a4687b25dd357cc9b8efe" size="49191" />
+  </tarball>
+  <tarball id="xf86dgaproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:ac5ef65108e1f2146286e53080975683dae49fc94680042e04bd1e2010e99050" href="http://www.x.org/releases/X11R7.7/src/everything/xf86dgaproto-2.1.tar.bz2" md5sum="a036dc2fcbf052ec10621fd48b68dbb1" size="85934" />
+  </tarball>
+  <tarball id="xf86driproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:9c4b8d7221cb6dc4309269ccc008a22753698ae9245a398a59df35f1404d661f" href="http://www.x.org/releases/X11R7.7/src/everything/xf86driproto-2.1.1.tar.bz2" md5sum="1d716d0dac3b664e5ee20c69d34bc10e" size="96528" />
+  </tarball>
+  <tarball id="xf86vidmodeproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:45d9499aa7b73203fd6b3505b0259624afed5c16b941bd04fcf123e5de698770" href="http://www.x.org/releases/X11R7.7/src/everything/xf86vidmodeproto-2.3.1.tar.bz2" md5sum="e793ecefeaecfeabd1aed6a01095174e" size="96822" />
+  </tarball>
+  <tarball id="xgamma" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXxf86vm" />
+    </dependencies>
+    <source hash="sha256:e322a2fea80d559c09d6bc285ebe1a9e454dbeae2a07116cb7d2207db9d2c310" href="http://www.x.org/releases/X11R7.7/src/everything/xgamma-1.0.5.tar.bz2" md5sum="c06067f572bc4a5298f324f27340da95" size="115035" />
+  </tarball>
+  <tarball id="xhost" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXmu" />
+    </dependencies>
+    <source hash="sha256:2870d19f3f4867ead5ba4e35bb73d1fa302be29d812c13e4195066c78d1f8850" href="http://www.x.org/releases/X11R7.7/src/everything/xhost-1.0.5.tar.bz2" md5sum="a0fcd2cb6ddd9f378944cc6f4f83cd7c" size="125820" />
+  </tarball>
+  <tarball id="xineramaproto" branch="">
+    <dependencies></dependencies>
+    <source hash="sha256:977574bb3dc192ecd9c55f59f991ec1dff340be3e31392c95deff423da52485b" href="http://www.x.org/releases/X11R7.7/src/everything/xineramaproto-1.2.1.tar.bz2" md5sum="9959fe0bfb22a0e7260433b8d199590a" size="96239" />
+  </tarball>
+  <tarball id="xinput" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXi" />
+    </dependencies>
+    <source hash="sha256:4ab007d952c76665603bcb82ceb15fd3929d10faf0580fc4873ac16f5f63847e" href="http://www.x.org/releases/X11R7.7/src/everything/xinput-1.6.0.tar.bz2" md5sum="d2459d35b4e0b41ded26a1d1159b7ac6" size="146209" />
+  </tarball>
+  <tarball id="xkbcomp" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:91d0c9ab445d21dfe1892dbae5ae5264f39bae68223dd092ffc547c9450b5a2d" href="http://www.x.org/releases/X11R7.7/src/everything/xkbcomp-1.2.4.tar.bz2" md5sum="a0fc1ac3fc4fe479ade09674347c5aa0" size="242185" />
+  </tarball>
+  <tarball id="xkbevd" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libxkbfile" />
+    </dependencies>
+    <source hash="sha256:55b2484f9851112c2685d503b64b319f0f98fce74863ef735ecd52b52ceb0116" href="http://www.x.org/releases/X11R7.7/src/everything/xkbevd-1.1.3.tar.bz2" md5sum="37ed71525c63a9acd42e7cde211dcc5b" size="147027" />
+  </tarball>
+  <tarball id="xkbutils" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXaw" />
+      <dep package="libXt" />
+    </dependencies>
+    <source hash="sha256:e409af0730788aa94ee22711750792546465a8f4729a0084d31a32c3ef0849bd" href="http://www.x.org/releases/X11R7.7/src/everything/xkbutils-1.0.3.tar.bz2" md5sum="52ad6d8d87577a8ac736ab5488bec210" size="119879" />
+  </tarball>
+  <tarball id="xkeyboard-config" branch="">
+    <dependencies>
+      <dep package="xkbcomp" />
+    </dependencies>
+    <source hash="sha256:22a1594116bf0ee3165f48487bdca4e5f25b2a1436e35e188b3ee38c543dabda" href="http://www.x.org/releases/X11R7.7/src/everything/xkeyboard-config-2.6.tar.bz2" md5sum="e7e31da9adb56ba52b5c18226b8cbef3" size="857799" />
+  </tarball>
+  <tarball id="xkill" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXmu" />
+    </dependencies>
+    <source hash="sha256:bd8307272a648ca76a266e5c1111384c8ed9367c6a8f1a5be844a5b5300881a9" href="http://www.x.org/releases/X11R7.7/src/everything/xkill-1.0.3.tar.bz2" md5sum="e7f0d57b6ba49c384e9cf8c9ff3243c1" size="107790" />
+  </tarball>
+  <tarball id="xlsatoms" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXmu" />
+    </dependencies>
+    <source hash="sha256:3b8bd98c1ca9789178db80bca75556b0c76e5092403014995d5ddaa3117536f9" href="http://www.x.org/releases/X11R7.7/src/everything/xlsatoms-1.1.1.tar.bz2" md5sum="9d0e16d116d1c89e6b668c1b2672eb57" size="116501" />
+  </tarball>
+  <tarball id="xlsclients" branch="">
+    <dependencies>
+      <dep package="libxcb" />
+    </dependencies>
+    <source hash="sha256:1ce5f3987b63ea79b3f8421fcb1dd9c739e99efa97f280eafd8e93574b9027d1" href="http://www.x.org/releases/X11R7.7/src/everything/xlsclients-1.1.2.tar.bz2" md5sum="760099f0af112401735801e3b9aa8595" size="114703" />
+  </tarball>
+  <tarball id="xmodmap" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:ef22ede9c4a3c720da539292c6911515a8408e618e0dec6aa2196ee2153de4b5" href="http://www.x.org/releases/X11R7.7/src/everything/xmodmap-1.0.7.tar.bz2" md5sum="d9b65f6881afe0d6d9863b30e1081bde" size="135223" />
+  </tarball>
+  <tarball id="xorg-docs" branch="">
+    <dependencies>
+      <dep package="xorg-sgml-doctools" />
+      <dep package="macros" />
+    </dependencies>
+    <source hash="sha256:b9b1918bd365e9eb29c325e76bb8c4d774d37be707e433fb0af94da35683375f" href="http://www.x.org/releases/X11R7.7/src/everything/xorg-docs-1.7.tar.bz2" md5sum="f9405a1692671d843725b90166370e00" size="370482" />
+  </tarball>
+  <tarball id="xorg-sgml-doctools" branch="">
+    <dependencies>
+      <dep package="macros" />
+    </dependencies>
+    <source hash="sha256:e71ce1df82dcc51eb14be6f42171dcc6bdd11ef46c0c605d6da8af12bd73b74c" href="http://www.x.org/releases/X11R7.7/src/everything/xorg-sgml-doctools-1.11.tar.bz2" md5sum="ee6dc0a8a693a908857af328b2462661" size="120356" />
+  </tarball>
+  <tarball id="xpr" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:fed98df31eb93d3dca4688cb535aabad06be572e70ace3b1685679c18dd86cb5" href="http://www.x.org/releases/X11R7.7/src/everything/xpr-1.0.4.tar.bz2" md5sum="6101f04731ffd40803df80eca274ec4b" size="143144" />
+  </tarball>
+  <tarball id="xprop" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:07907a189099b8a000406b5ca6c5346df238a9e1fe3b32dc59f48fe0ad12f1a3" href="http://www.x.org/releases/X11R7.7/src/everything/xprop-1.2.1.tar.bz2" md5sum="d5529dc8d811efabd136ca2d8e857deb" size="133712" />
+  </tarball>
+  <tarball id="xrandr" branch="">
+    <dependencies>
+      <dep package="libXrandr" />
+    </dependencies>
+    <source hash="sha256:1059ff7a9ad0df8e00a765ffa4e08a505304c02663112da370ac7082030b980e" href="http://www.x.org/releases/X11R7.7/src/everything/xrandr-1.3.5.tar.bz2" md5sum="9735173a84dca9b05e06fd4686196b07" size="152891" />
+  </tarball>
+  <tarball id="xrdb" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXmu" />
+    </dependencies>
+    <source hash="sha256:642401e12996efe3e5e5307a245e24c282b94a44c1f147e177c8484b862aeab7" href="http://www.x.org/releases/X11R7.7/src/everything/xrdb-1.0.9.tar.bz2" md5sum="ed2e48cf33584455d74615ad4bbe4246" size="118971" />
+  </tarball>
+  <tarball id="xrefresh" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:069502eb485ea128a0bebf94302d5cbb271ad9d31ae51691abd6d64914ff9d7b" href="http://www.x.org/releases/X11R7.7/src/everything/xrefresh-1.0.4.tar.bz2" md5sum="2f63f88ad0dcecd33c8cf000f38e9250" size="105912" />
+  </tarball>
+  <tarball id="xserver" branch="">
+    <dependencies>
+      <dep package="xorg-protos" />
+      <dep package="libGL" />
+      <dep package="libXaw" />
+      <dep package="libXfont" />
+      <dep package="libxtrans" />
+      <dep package="libXau" />
+      <dep package="libxkbfile" />
+      <dep package="libXdmcp" />
+      <dep package="libXxf86vm" />
+      <dep package="libXinerama" />
+      <dep package="libXv" />
+      <dep package="libdrm" />
+      <dep package="libdmx" />
+      <dep package="libXtst" />
+      <dep package="libXRes" />
+      <dep package="pixman" />
+      <dep package="libpciaccess" />
+    </dependencies>
+    <source hash="sha256:ca9f9e22f432f1ccbf8e7a21e746e02be4081a0f3975eb7cff276483193cc5f5" href="http://www.x.org/releases/X11R7.7/src/everything/xorg-server-1.12.2.tar.bz2" md5sum="791f0323b886abb7954de7f042bb7dc6" size="5431841" />
+  </tarball>
+  <tarball id="xset" branch="">
+    <dependencies>
+      <dep package="libXext" />
+      <dep package="libXmu" />
+    </dependencies>
+    <source hash="sha256:61371c140030b8b05075a1378b34a4d7c438ed9159496a95f10782c6f4aec1e8" href="http://www.x.org/releases/X11R7.7/src/everything/xset-1.2.2.tar.bz2" md5sum="d44e0057d6722b25d5a314e82e0b7e7c" size="129701" />
+  </tarball>
+  <tarball id="xsetroot" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXmu" />
+      <dep package="bitmaps" />
+    </dependencies>
+    <source hash="sha256:88f13e949e7aea126239e5c9b3fe7bb7c2ecf70c70774ae41218789d9cfe5fad" href="http://www.x.org/releases/X11R7.7/src/everything/xsetroot-1.1.0.tar.bz2" md5sum="b78a2da4cf128775031a5a3422fc0b78" size="108707" />
+  </tarball>
+  <tarball id="xvinfo" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXv" />
+    </dependencies>
+    <source hash="sha256:60c74aa190bcf1e244f6f1576dc43869018a8ed5ba319703a5c198d3466a3985" href="http://www.x.org/releases/X11R7.7/src/everything/xvinfo-1.1.1.tar.bz2" md5sum="c88feb501083951a8f47a21aaeb1529d" size="105663" />
+  </tarball>
+  <tarball id="xwd" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:02752ba737299cf4a1b75d777166c5b5e5ba8d3cabdf2c54cbe77de175356f3a" href="http://www.x.org/releases/X11R7.7/src/everything/xwd-1.0.5.tar.bz2" md5sum="2113126f9ac9c02bb8547c112c5d037e" size="136820" />
+  </tarball>
+  <tarball id="xwininfo" branch="">
+    <dependencies>
+      <dep package="libX11" />
+      <dep package="libXext" />
+    </dependencies>
+    <source hash="sha256:8fa66c9ce02da257613fa428137ab9efc89c8f9939c074513dbc0f407dc9ac3a" href="http://www.x.org/releases/X11R7.7/src/everything/xwininfo-1.1.2.tar.bz2" md5sum="9e8b58c8aa6172e87ab4f9cf3612fedd" size="135415" />
+  </tarball>
+  <tarball id="xwud" branch="">
+    <dependencies>
+      <dep package="libX11" />
+    </dependencies>
+    <source hash="sha256:d6b3a09ccfe750868e26bd2384900ab5ff0d434f7f40cd272a50eda8aaa1f8bd" href="http://www.x.org/releases/X11R7.7/src/everything/xwud-1.0.4.tar.bz2" md5sum="3025b152b4f13fdffd0c46d0be587be6" size="124604" />
+  </tarball>
+</moduleset>
