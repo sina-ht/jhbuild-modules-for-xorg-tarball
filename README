@@ -29,5 +29,5 @@ Create xorg.modules:
   Modify the configuration of the script.
     Especially the $XorgRelease variable.
     my $XorgRelease = 'X11R7.6';
-  Run the script.
+  Run the script.  This will download tar-balls.  Just wait.
     $ ./create-xorg-modueleset.pl  > X11R7.6.xorg.modules
