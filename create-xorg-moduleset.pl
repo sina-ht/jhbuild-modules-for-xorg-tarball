@@ -20,7 +20,7 @@ use Digest;
 #use Data::Dumper;
 
 ### Configuration
-my $XorgRelease = 'X11R7.6';
+my $XorgRelease = 'X11R7.7';
 my $XorgTargetURL = "http://www.x.org/releases/${XorgRelease}/src/everything/";
 my $XorgTargetCache = '.src.everything';
 my $XorgBaseURL = 'http://cgit.freedesktop.org/xorg/util/modular/plain/xorg.modules';
@@ -62,10 +62,22 @@ my $XorgModules = {
     'fonts-misc' => 'font-misc-misc',
     'fonts-alias' => 'font-alias',
     'xserver' => 'xorg-server',
+    'xf86-video-chips' => 'SKIP',
     'xf86-video-impact' => 'SKIP',
     'xf86-video-nouveau' => 'SKIP',
+    'xf86-video-rendition' => 'SKIP',
+    'xf86-video-sisusb' => 'SKIP',
     'xf86-video-sunbw2' => 'SKIP',
+    'xf86-video-suncg14' => 'SKIP',
+    'xf86-video-suncg3' => 'SKIP',
+    'xf86-video-sunleo' => 'SKIP',
+    'xf86-video-suntcx' => 'SKIP',
+    'xf86-video-tseng' => 'SKIP',
+    'xf86-video-xgi' => 'SKIP',
+    'xf86-video-xgixp' => 'SKIP',
     'xkeyboard-config' => 'SKIP',
+    'xf86-input-acecad' => 'SKIP',
+    'xf86-input-aiptek' => 'SKIP',
 };
 
 ### Code
